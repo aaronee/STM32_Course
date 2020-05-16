@@ -1,0 +1,11 @@
+12:54:35 **** Incremental Build of configuration Debug for project Basic_example ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "Basic_example.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13984	     32	   2880	  16896	   4200	Basic_example.elf
+Finished building: Basic_example.siz
+ 
+
+12:54:35 Build Finished. 0 errors, 0 warnings. (took 127ms)
+

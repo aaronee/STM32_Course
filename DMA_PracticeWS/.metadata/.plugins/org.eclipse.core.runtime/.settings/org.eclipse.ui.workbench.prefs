@@ -1,0 +1,21 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+UIActivities.org.eclipse.cdt.debug.dsfgdbActivity=true
+eclipse.preferences.version=1
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=16,16,16
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_TAB_INNER_KEYLINE_COLOR=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_TAB_OUTER_KEYLINE_COLOR=196,197,193
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_TAB_OUTLINE_COLOR=182,188,204
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_END=214,214,214
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_START=246,246,246
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_BG_END=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=221,223,229
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_INNER_KEYLINE_COLOR=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_OUTER_KEYLINE_COLOR=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_OUTLINE_COLOR=182,188,204
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_END=255,255,255
+org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_START=255,255,255
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+SHIFT+NUMPAD_DIVIDE"/>\n<keyBinding commandId\="org.eclipse.search.ui.performTextSearchFile" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+F3"/>\n<keyBinding commandId\="org.eclipse.debug.ui.commands.TerminateAndRelaunch" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+R"/>\n<keyBinding commandId\="org.eclipse.ui.edit.text.folding.expand_all" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+ARROW_DOWN"/>\n<keyBinding commandId\="org.eclipse.ui.edit.text.folding.collapse_all" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+ARROW_UP"/>\n<keyBinding contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+NUMPAD_MULTIPLY"/>\n</org.eclipse.ui.commands>

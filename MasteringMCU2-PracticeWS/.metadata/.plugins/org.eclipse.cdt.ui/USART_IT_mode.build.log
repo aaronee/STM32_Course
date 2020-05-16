@@ -1,0 +1,11 @@
+23:18:30 **** Incremental Build of configuration Debug for project USART_IT_mode ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "USART_IT_mode.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9008	     32	   1816	  10856	   2a68	USART_IT_mode.elf
+Finished building: USART_IT_mode.siz
+ 
+
+23:18:31 Build Finished. 0 errors, 0 warnings. (took 83ms)
+

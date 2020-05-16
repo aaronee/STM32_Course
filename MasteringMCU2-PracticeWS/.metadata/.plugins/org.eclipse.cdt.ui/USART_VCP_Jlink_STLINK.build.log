@@ -1,0 +1,11 @@
+12:21:28 **** Incremental Build of configuration Debug for project USART_VCP_Jlink_STLINK ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "USART_VCP_Jlink_STLINK.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7680	     32	   1816	   9528	   2538	USART_VCP_Jlink_STLINK.elf
+Finished building: USART_VCP_Jlink_STLINK.siz
+ 
+
+12:21:28 Build Finished. 0 errors, 0 warnings. (took 86ms)
+

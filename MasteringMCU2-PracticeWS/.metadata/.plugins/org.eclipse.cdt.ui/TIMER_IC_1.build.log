@@ -1,0 +1,11 @@
+17:05:57 **** Incremental Build of configuration Debug for project TIMER_IC_1 ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "TIMER_IC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+  28360	    496	   1952	  30808	   7858	TIMER_IC_1.elf
+Finished building: TIMER_IC_1.siz
+ 
+
+17:05:57 Build Finished. 0 errors, 0 warnings. (took 200ms)
+

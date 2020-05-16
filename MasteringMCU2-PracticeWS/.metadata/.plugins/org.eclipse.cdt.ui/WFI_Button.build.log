@@ -1,0 +1,11 @@
+15:01:38 **** Incremental Build of configuration Debug for project WFI_Button ****
+make -j12 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "WFI_Button.elf"
+   text	   data	    bss	    dec	    hex	filename
+  14200	     56	   1712	  15968	   3e60	WFI_Button.elf
+Finished building: WFI_Button.siz
+ 
+
+15:01:38 Build Finished. 0 errors, 0 warnings. (took 154ms)
+

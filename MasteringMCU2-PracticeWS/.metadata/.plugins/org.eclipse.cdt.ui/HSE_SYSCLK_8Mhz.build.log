@@ -1,0 +1,11 @@
+19:01:34 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "HSE_SYSCLK_8Mhz.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16256	    128	   1736	  18120	   46c8	HSE_SYSCLK_8Mhz.elf
+Finished building: HSE_SYSCLK_8Mhz.siz
+ 
+
+19:01:35 Build Finished. 0 errors, 0 warnings. (took 81ms)
+

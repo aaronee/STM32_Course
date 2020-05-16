@@ -1,0 +1,11 @@
+12:53:48 **** Incremental Build of configuration Debug for project IRQ_LL_example ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "IRQ_LL_example.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1328	     24	   1568	   2920	    b68	IRQ_LL_example.elf
+Finished building: IRQ_LL_example.siz
+ 
+
+12:53:48 Build Finished. 0 errors, 0 warnings. (took 130ms)
+

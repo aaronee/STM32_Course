@@ -1,0 +1,11 @@
+20:36:52 **** Incremental Build of configuration Debug for project 1_LED_Toggle ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "1_LED_Toggle.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8048	     32	   1664	   9744	   2610	1_LED_Toggle.elf
+Finished building: 1_LED_Toggle.siz
+ 
+
+20:36:52 Build Finished. 0 errors, 0 warnings. (took 145ms)
+

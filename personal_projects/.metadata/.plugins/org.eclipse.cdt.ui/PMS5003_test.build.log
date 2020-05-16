@@ -1,0 +1,11 @@
+21:53:08 **** Incremental Build of configuration Debug for project PMS5003_test ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "PMS5003_test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  18616	    176	   2920	  21712	   54d0	PMS5003_test.elf
+Finished building: PMS5003_test.siz
+ 
+
+21:53:09 Build Finished. 0 errors, 0 warnings. (took 150ms)
+

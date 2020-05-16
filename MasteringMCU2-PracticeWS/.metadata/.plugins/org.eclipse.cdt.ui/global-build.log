@@ -1,0 +1,24 @@
+11:40:15 **** Incremental Build of configuration Debug for project RTC_Date_TIme ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "RTC_Date_TIme.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21360	    128	   1872	  23360	   5b40	RTC_Date_TIme.elf
+Finished building: RTC_Date_TIme.siz
+ 
+11:40:34 **** Incremental Build of configuration Debug for project RTC_Date_TIme ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "RTC_Date_TIme.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21360	    128	   1872	  23360	   5b40	RTC_Date_TIme.elf
+Finished building: RTC_Date_TIme.siz
+ 
+11:40:40 **** Incremental Build of configuration Debug for project RTC_Date_TIme ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "RTC_Date_TIme.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21360	    128	   1872	  23360	   5b40	RTC_Date_TIme.elf
+Finished building: RTC_Date_TIme.siz
+ 

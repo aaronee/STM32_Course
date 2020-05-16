@@ -1,0 +1,11 @@
+14:13:23 **** Incremental Build of configuration Debug for project FreeRTOS_helloworld ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "FreeRTOS_helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24568	    136	  18704	  43408	   a990	FreeRTOS_helloworld.elf
+Finished building: FreeRTOS_helloworld.siz
+ 
+
+14:13:23 Build Finished. 0 errors, 0 warnings. (took 138ms)
+

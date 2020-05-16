@@ -1,0 +1,11 @@
+13:25:03 **** Incremental Build of configuration Debug for project TIMER_OC_PWM_BlinkLed ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "TIMER_OC_PWM_BlinkLed.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20360	    496	   1808	  22664	   5888	TIMER_OC_PWM_BlinkLed.elf
+Finished building: TIMER_OC_PWM_BlinkLed.siz
+ 
+
+13:25:03 Build Finished. 0 errors, 0 warnings. (took 150ms)
+

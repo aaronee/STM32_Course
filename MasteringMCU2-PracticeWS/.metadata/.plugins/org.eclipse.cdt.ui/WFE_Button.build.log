@@ -1,0 +1,11 @@
+13:34:56 **** Incremental Build of configuration Debug for project WFE_Button ****
+make -j12 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "WFE_Button.elf"
+   text	   data	    bss	    dec	    hex	filename
+  14152	     56	   1712	  15920	   3e30	WFE_Button.elf
+Finished building: WFE_Button.siz
+ 
+
+13:34:56 Build Finished. 0 errors, 0 warnings. (took 137ms)
+

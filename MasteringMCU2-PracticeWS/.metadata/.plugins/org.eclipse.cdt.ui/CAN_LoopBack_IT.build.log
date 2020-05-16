@@ -1,0 +1,11 @@
+20:39:05 **** Incremental Build of configuration Debug for project CAN_LoopBack_IT ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "CAN_LoopBack_IT.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21624	    168	   1872	  23664	   5c70	CAN_LoopBack_IT.elf
+Finished building: CAN_LoopBack_IT.siz
+ 
+
+20:39:05 Build Finished. 0 errors, 0 warnings. (took 133ms)
+

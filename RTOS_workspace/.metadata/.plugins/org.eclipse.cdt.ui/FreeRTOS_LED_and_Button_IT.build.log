@@ -1,0 +1,11 @@
+14:24:52 **** Incremental Build of configuration Debug for project FreeRTOS_LED_and_Button_IT ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "FreeRTOS_LED_and_Button_IT.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22928	     32	  36512	  59472	   e850	FreeRTOS_LED_and_Button_IT.elf
+Finished building: FreeRTOS_LED_and_Button_IT.siz
+ 
+
+14:24:52 Build Finished. 0 errors, 0 warnings. (took 135ms)
+

@@ -1,0 +1,21 @@
+1586964135608	Delete 4 resources
+1586964375762	Delete resource 'STM32_helloworld'
+1587001222459	Delete 2 resources
+1587001869707	Delete resource 'FreeRTOS_helloworld/startup/startup_stm32l4r5xx.S'
+1587006635417	Delete 2 resources
+1587061986879	Delete resource 'FreeRTOS_helloworld_SYSVIEW/FreeRTOS_helloworld_SYSVIEW Debug.launch'
+1587061993406	Delete 2 resources
+1587062010856	Delete resource 'FreeRTOS_helloworld_SYSVIEW/FreeRTOS_helloworld Debug Jlink.launch'
+1587064470535	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Debug'
+1587065695615	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_IAR.c'
+1587065704648	Delete 2 resources
+1587065761487	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_GCC.c'
+1587068578248	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_GCC.c'
+1587070853092	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_SES.c'
+1587070857600	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_KEIL.c'
+1587070860699	Delete resource 'FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/SEGGER/SEGGER_RTT_Syscalls_IAR.c'
+1587158990773	Delete resource 'FreeRTOS_LED_and_Button/FreeRTOS_helloworld_SYSVIEW.launch'
+1587160380486	Delete resource 'FreeRTOS_LED_and_Button/Debug'
+1587231467094	Delete resource 'FreeRTOS_LED_and_Button_IT/Debug'
+1587231471358	Delete resource 'FreeRTOS_LED_and_Button_IT/FreeRTOS_LED_and_Button Debug.launch'
+1587233939118	Delete resource 'FreeRTOS_Tasks_Notify/Debug'

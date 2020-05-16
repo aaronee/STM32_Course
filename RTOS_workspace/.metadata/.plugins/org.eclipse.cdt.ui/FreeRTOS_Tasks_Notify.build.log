@@ -1,0 +1,33 @@
+15:14:42 **** Incremental Build of configuration Debug for project FreeRTOS_Tasks_Notify ****
+make -j11 all 
+Building file: ../Src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DSTM32L4R5xx -DDEBUG -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DUSE_FULL_LL_DRIVER -D__NVIC_PRIO_BITS=4 -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Inc" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Config" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Drivers/CMSIS/Include" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Drivers/STM32L4xx_HAL_Driver/Inc" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Third-Party/FreeRTOS/org/Source/include" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Third-Party/Segger/Config" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Third-Party/Segger/OS" -I"/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/Third-Party/Segger/SEGGER" -std=gnu11 -c -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -std=gnu90 -O0 -ffunction-sections -fdata-sections -g -Wall -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -c -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'vLD2task_handler':
+../Src/main.c:83:29: warning: unused parameter 'params' [-Wunused-parameter]
+   83 | void vLD2task_handler(void *params)
+      |                       ~~~~~~^~~~~~
+../Src/main.c: In function 'vB1task_handler':
+../Src/main.c:98:28: warning: unused parameter 'param' [-Wunused-parameter]
+   98 | void vB1task_handler(void *param)
+      |                      ~~~~~~^~~~~
+Finished building: ../Src/main.c
+ 
+Building target: FreeRTOS_Tasks_Notify.elf
+Invoking: GNU ARM Cross C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T "/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_Tasks_Notify/STM32L4R5ZITx_FLASH.ld" -Xlinker --gc-sections -Wl,-Map,"FreeRTOS_Tasks_Notify.map" --specs=nano.specs -specs=rdimon.specs -lc -lrdimon -o "FreeRTOS_Tasks_Notify.elf"  ./startup/startup_stm32l4r5xx.o  ./Third-Party/Segger/SEGGER/SEGGER_RTT.o ./Third-Party/Segger/SEGGER/SEGGER_RTT_ASM_ARMv7M.o ./Third-Party/Segger/SEGGER/SEGGER_RTT_printf.o ./Third-Party/Segger/SEGGER/SEGGER_SYSVIEW.o  ./Third-Party/Segger/OS/SEGGER_SYSVIEW_FreeRTOS.o  ./Third-Party/Segger/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o  ./Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o  ./Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o  ./Third-Party/FreeRTOS/org/Source/croutine.o ./Third-Party/FreeRTOS/org/Source/event_groups.o ./Third-Party/FreeRTOS/org/Source/list.o ./Third-Party/FreeRTOS/org/Source/queue.o ./Third-Party/FreeRTOS/org/Source/stream_buffer.o ./Third-Party/FreeRTOS/org/Source/tasks.o ./Third-Party/FreeRTOS/org/Source/timers.o  ./Src/it.o ./Src/main.o ./Src/msp.o ./Src/stm32l4xx_hal_timebase_tim.o ./Src/system_stm32l4xx.o  ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o   
+Finished building target: FreeRTOS_Tasks_Notify.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "FreeRTOS_Tasks_Notify.elf"  "FreeRTOS_Tasks_Notify.hex"
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "FreeRTOS_Tasks_Notify.elf"
+   text	   data	    bss	    dec	    hex	filename
+  27152	    136	  36640	  63928	   f9b8	FreeRTOS_Tasks_Notify.elf
+Finished building: FreeRTOS_Tasks_Notify.siz
+ 
+Finished building: FreeRTOS_Tasks_Notify.hex
+ 
+
+15:14:42 Build Finished. 0 errors, 2 warnings. (took 614ms)
+

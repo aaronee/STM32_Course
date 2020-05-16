@@ -1,0 +1,11 @@
+18:41:13 **** Incremental Build of configuration Debug for project USART_Example ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "USART_Example.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7232	     32	   1712	   8976	   2310	USART_Example.elf
+Finished building: USART_Example.siz
+ 
+
+18:41:13 Build Finished. 0 errors, 0 warnings. (took 133ms)
+

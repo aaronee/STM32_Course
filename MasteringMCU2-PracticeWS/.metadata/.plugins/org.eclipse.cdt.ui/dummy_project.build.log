@@ -1,0 +1,11 @@
+21:32:34 **** Incremental Build of configuration Debug for project dummy_project ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "dummy_project.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22224	    128	   2016	  24368	   5f30	dummy_project.elf
+Finished building: dummy_project.siz
+ 
+
+21:32:34 Build Finished. 0 errors, 0 warnings. (took 74ms)
+

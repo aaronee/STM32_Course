@@ -1,0 +1,43 @@
+/*
+ * PMS5003_HAL_STM32.h
+ *
+ *  Created on: May 6, 2020
+ *      Author: khoahuynh
+ */
+
+#ifndef INC_PMS5003_HAL_STM32_H_
+#define INC_PMS5003_HAL_STM32_H_
+
+
+#include "main.h"
+
+#define PMS_MODE_ACTIVE 1
+#define PMS_MODE_PASSIVE 0
+
+typedef struct {
+	UART_HandleTypeDef *PMS_huart;
+	GPIO_TypeDef  *SET_PIN_PORT;
+	uint16_t SET_PIN; 				//TTL3.3V，HIGH/suspending-normal working status, LOW-sleeping mode.
+	GPIO_TypeDef  *RESET_PIN_PORT;
+	uint16_t RESET_PIN;
+	uint8_t PMS_MODE;
+
+	uint16_t _framelen;
+	uint16_t PM1_0_factory;		 // concentration unit * μg/m3 - under factory environment
+	uint16_t PM2_5_factory;
+	uint16_t PM10_factory;
+	uint16_t PM1_0_atmospheric; // concentration unit * μg/m3 - under atmospheric environment
+	uint16_t PM2_5_atmospheric;
+	uint16_t PM10_atmospheric;
+	uint16_t density_0_3um; 	// number of particles with diameter beyond X(um) in 0.1L of air
+	uint16_t density_0_5um;
+	uint16_t density_1_0um;
+	uint16_t density_2_5um;
+	uint16_t density_5_0um;
+	uint16_t density_10um;
+	uint16_t _reserved;
+	uint16_t _checkcode;
+
+}PMS_typedef;
+
+#endif /* INC_PMS5003_HAL_STM32_H_ */

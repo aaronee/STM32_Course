@@ -1,0 +1,8 @@
+SoundBehaviorDialog.recentSounds=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<recentSounds>\n<soundFileName name\="/System/Library/Sounds/Submarine.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Ping.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Purr.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Hero.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Funk.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Pop.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Basso.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Sosumi.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Glass.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Blow.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Bottle.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Frog.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Tink.aiff"/>\n<soundFileName name\="/System/Library/Sounds/Morse.aiff"/>\n</recentSounds>\n
+columnOrderKeyEXE=0,1,2,3,4,5
+columnOrderKeySF=0,1,2,3,4,5
+columnSortDirectionKeyEXE=128
+columnSortDirectionKeySF=128
+eclipse.preferences.version=1
+visibleColumnsKeyEXE=1,1,1,0,0,0
+visibleColumnsKeySF=1,1,0,0,0,0

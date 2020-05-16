@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="taskmesg2"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="taskmesg2"/>
+			<item value="taskmesg"/>
+			<item value="semaphore"/>
+			<item value="print_error_mesg"/>
+			<item value="read_rtc_info"/>
+			<item value="read_led_status"/>
+			<item value="led_toggle_stop"/>
+			<item value="led_toggle_start"/>
+			<item value="make_led_off"/>
+			<item value="make_led_on"/>
+			<item value="RTC_param"/>
+			<item value="pvBuffer"/>
+			<item value="not"/>
+			<item value="noti"/>
+			<item value="HAL_UART_RxCpltCallback"/>
+		</list>
+		<list key="replacehistory">
+			<item value="app_error_print"/>
+			<item value="app_rtc_read"/>
+			<item value="app_led_read"/>
+			<item value="app_led_toggle_stop"/>
+			<item value="app_led_stop"/>
+			<item value="app_led_toggle"/>
+			<item value="app_led_off"/>
+			<item value="app_led_on"/>
+			<item value="TIME_param"/>
+			<item value="cmd_process_task"/>
+			<item value="cmd_handle_task"/>
+			<item value="uart_write_task"/>
+			<item value="menu_print_task"/>
+			<item value="vTask2_handler"/>
+			<item value="vTask1_handler"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1149"/>
+		<item key="DIALOG_Y_ORIGIN" value="226"/>
+		<item key="DIALOG_WIDTH" value="294"/>
+		<item key="DIALOG_HEIGHT" value="408"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

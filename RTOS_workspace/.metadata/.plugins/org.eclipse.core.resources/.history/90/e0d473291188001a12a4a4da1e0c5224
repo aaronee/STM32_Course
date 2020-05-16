@@ -1,0 +1,144 @@
+/**
+ *
+ * Author: Aaron Huynh - Created on: Apr. 9, 2020
+ *
+ * File name: main.c
+ * Project name: FreeRTOS_led_and_button
+ *
+ * Description: This example is a copy of FreeRTOS QUEUE processing example aiming to
+ * 				demonstrating the use of semaphore to avoid collision when multiple task using same resource
+ * Problem: app_rtc_read() when trying to use the same variable [taskmesg] to store
+ * 			2 messages and send to uart_write_queue back to back
+ * 			vTask2() trying to print messages whenever the queue is filled, doesn't care the
+ * 			last message is transmitted completed or not
+ * Solution: Give and take a binary semaphore to ensure that 1 message is transmitted success to another
+ *
+ * 			Line #75 we create a semaphore handler
+ * 			Line #137 we create a semaphore
+ * 			Line #468 we take the semaphore in app_rtc_read()
+ * 				and give back when uart is finished at #188 in vTask2_handler()
+ *			Line #473 we take the semaphore the 2nd time and give back when uart is finished at #188 again
+ *
+ *<-this is line 22
+ */
+#include "stm32l4r5xx.h"
+#include "main.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+#include "semphr.h"
+
+/*----------------------------------------------------------------*/
+//#define USE_SEMIHOSTING
+//#define USE_UART
+#define TRUE 1
+#define FALSE 0
+
+//MUTEX switch : un comment the below line to use mutex
+//#define USE_MUTEX
+
+UART_HandleTypeDef hlpuart1 = {0};
+
+/*----------------------------------------------------------------*/
+void UART_Init(void);
+void GPIO_Init(void);
+void Error_handler(void);
+static void prvSetupHardware(void);
+
+
+#ifdef USE_SEMIHOSTING
+// Call semihosting
+extern void initialise_monitor_handles(void);
+#endif
+
+
+/*----------------------------------------------------------------*/
+
+int main(void)
+{
+	DWT->CTRL |= (1UL << 0UL); //Enable the CYCCNT counter using for SYSVIEW to use as time stamp
+
+	//SYSVIEW starts recording
+	SEGGER_SYSVIEW_Conf();
+	SEGGER_SYSVIEW_Start();
+
+	prvSetupHardware();
+
+	#ifdef USE_SEMIHOSTING
+	initialise_monitor_handles();
+	printf("semihosting runs \n");
+	#endif
+
+	#ifdef USE_UART
+	sprintf(mesg,"LPUART1 is runing \r\n");
+	HAL_UART_Transmit(&hlpuart1,(uint8_t*)mesg, strlen(mesg), HAL_MAX_DELAY);
+	#endif
+
+
+
+	for(;;);
+
+}
+
+/*----------------------------------------------------------------*/
+
+
+void Error_handler(void)
+{
+	while(1);
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim->Instance == TIM2)
+  {
+    HAL_IncTick();
+  }
+}
+
+/**
+ * Peripheral initialize
+ *
+ */
+static void prvSetupHardware(void)
+{
+	HAL_Init();
+	RTC_Init();
+	GPIO_Init();
+	UART_Init();
+}
+ /* Function supply for prvSetupHardware*/
+void GPIO_Init(void)
+{
+	__HAL_RCC_GPIOG_CLK_ENABLE(); // lpuart1 tx-rx
+	__HAL_RCC_GPIOB_CLK_ENABLE(); // lD2 - blue
+
+
+	/*<LD2 led blue PB7>*/
+	GPIO_InitTypeDef LD2_param;
+	LD2_param.Pin = GPIO_PIN_7;
+	LD2_param.Mode = GPIO_MODE_OUTPUT_PP;
+	LD2_param.Pull = GPIO_NOPULL;
+
+	HAL_GPIO_Init(GPIOB,&LD2_param);
+}
+void UART_Init(void)
+{
+	 hlpuart1.Instance = LPUART1;
+	 hlpuart1.Init.BaudRate = 9600;
+	 hlpuart1.Init.WordLength = UART_WORDLENGTH_8B;
+	 hlpuart1.Init.StopBits = UART_STOPBITS_1;
+	 hlpuart1.Init.Parity = UART_PARITY_NONE;
+	 hlpuart1.Init.Mode = UART_MODE_TX_RX;
+	 hlpuart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+	 hlpuart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+	 hlpuart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+	 hlpuart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+	 hlpuart1.FifoMode = UART_FIFOMODE_DISABLE;	// Peripheral high level initialization chap5vid6
+	if ( HAL_UART_Init(&hlpuart1)!=HAL_OK)
+	{
+		Error_handler();
+	}
+}
+

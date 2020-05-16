@@ -1,0 +1,272 @@
+
+**** Build of configuration Debug for project BkupSRAM_Standby ****
+
+Nothing to build for project BkupSRAM_Standby
+
+**** Build of configuration Debug for project CAN_LoopBack ****
+
+Nothing to build for project CAN_LoopBack
+
+**** Build of configuration Debug for project CAN_LoopBack_IT ****
+
+Nothing to build for project CAN_LoopBack_IT
+
+**** Build of configuration Debug for project CAN_Normal_Mode_2Nodes ****
+
+Nothing to build for project CAN_Normal_Mode_2Nodes
+
+**** Build of configuration Debug for project Current_Measurement_Run_Mode ****
+
+Nothing to build for project Current_Measurement_Run_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Sleep_Mode ****
+
+Nothing to build for project Current_Measurement_Sleep_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Standby_Mode ****
+
+Nothing to build for project Current_Measurement_Standby_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Stop_Mode ****
+
+Nothing to build for project Current_Measurement_Stop_Mode
+
+**** Build of configuration Debug for project HSE_SYSCLK_8Mhz ****
+
+Nothing to build for project HSE_SYSCLK_8Mhz
+
+**** Build of configuration Debug for project PLL_SYSCLK ****
+
+Nothing to build for project PLL_SYSCLK
+
+**** Build of configuration Debug for project PLL_SYSCLK_HSE ****
+
+Nothing to build for project PLL_SYSCLK_HSE
+
+**** Build of configuration Debug for project RTC_AlarmA ****
+
+Nothing to build for project RTC_AlarmA
+
+**** Build of configuration Debug for project RTC_AlarmA_12h ****
+
+Nothing to build for project RTC_AlarmA_12h
+
+**** Build of configuration Debug for project RTC_Alarm_standby_wakeup ****
+
+Nothing to build for project RTC_Alarm_standby_wakeup
+
+**** Build of configuration Debug for project RTC_Date_Time ****
+
+Nothing to build for project RTC_Date_Time
+
+**** Build of configuration Debug for project RTC_Demo_App ****
+
+Nothing to build for project RTC_Demo_App
+
+**** Build of configuration Debug for project RTC_Print_TimeInfo ****
+
+Nothing to build for project RTC_Print_TimeInfo
+
+**** Build of configuration Debug for project RTC_TS_Timer ****
+
+Nothing to build for project RTC_TS_Timer
+
+**** Build of configuration Debug for project Sleep-On-Exit_1 ****
+
+Nothing to build for project Sleep-On-Exit_1
+17:33:20 **** Clean-only build of configuration Debug for project TEST1 ****
+make clean 
+rm -rf *
+ 
+
+**** Build of configuration Debug for project TEST1 ****
+
+Nothing to build for project TEST1
+17:33:20 **** Clean-only build of configuration Debug for project UART2_Example ****
+make clean 
+rm -rf *
+ 
+
+**** Build of configuration Debug for project UART2_Example ****
+
+Nothing to build for project UART2_Example
+
+**** Build of configuration Debug for project UART2_Example_IT ****
+
+Nothing to build for project UART2_Example_IT
+
+**** Build of configuration Debug for project WFE_button ****
+
+Nothing to build for project WFE_button
+
+**** Build of configuration Debug for project WFI ****
+
+Nothing to build for project WFI
+17:33:20 **** Clean-only build of configuration Debug for project time_base_100ms ****
+make clean 
+rm -rf *
+ 
+
+**** Build of configuration Debug for project time_base_100ms ****
+
+Nothing to build for project time_base_100ms
+
+**** Build of configuration Debug for project time_base_100ms_IT ****
+
+Nothing to build for project time_base_100ms_IT
+
+**** Build of configuration Debug for project time_base_10micro ****
+
+Nothing to build for project time_base_10micro
+
+**** Build of configuration Debug for project timer_IC_1 ****
+
+Nothing to build for project timer_IC_1
+
+**** Build of configuration Debug for project timer_OC_1 ****
+
+Nothing to build for project timer_OC_1
+
+**** Build of configuration Debug for project timer_OC_PWM_1 ****
+
+Nothing to build for project timer_OC_PWM_1
+
+**** Build of configuration Debug for project timer_PWM_LED ****
+
+Nothing to build for project timer_PWM_LED
+
+**** Build of configuration Debug for project BkupSRAM_Standby ****
+
+Nothing to build for project BkupSRAM_Standby
+
+**** Build of configuration Debug for project CAN_LoopBack ****
+
+Nothing to build for project CAN_LoopBack
+
+**** Build of configuration Debug for project CAN_LoopBack_IT ****
+
+Nothing to build for project CAN_LoopBack_IT
+
+**** Build of configuration Debug for project CAN_Normal_Mode_2Nodes ****
+
+Nothing to build for project CAN_Normal_Mode_2Nodes
+
+**** Build of configuration Debug for project Current_Measurement_Run_Mode ****
+
+Nothing to build for project Current_Measurement_Run_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Sleep_Mode ****
+
+Nothing to build for project Current_Measurement_Sleep_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Standby_Mode ****
+
+Nothing to build for project Current_Measurement_Standby_Mode
+
+**** Build of configuration Debug for project Current_Measurement_Stop_Mode ****
+
+Nothing to build for project Current_Measurement_Stop_Mode
+
+**** Build of configuration Debug for project HSE_SYSCLK_8Mhz ****
+
+Nothing to build for project HSE_SYSCLK_8Mhz
+
+**** Build of configuration Debug for project PLL_SYSCLK ****
+
+Nothing to build for project PLL_SYSCLK
+
+**** Build of configuration Debug for project PLL_SYSCLK_HSE ****
+
+Nothing to build for project PLL_SYSCLK_HSE
+
+**** Build of configuration Debug for project RTC_AlarmA ****
+
+Nothing to build for project RTC_AlarmA
+
+**** Build of configuration Debug for project RTC_AlarmA_12h ****
+
+Nothing to build for project RTC_AlarmA_12h
+
+**** Build of configuration Debug for project RTC_Alarm_standby_wakeup ****
+
+Nothing to build for project RTC_Alarm_standby_wakeup
+
+**** Build of configuration Debug for project RTC_Date_Time ****
+
+Nothing to build for project RTC_Date_Time
+
+**** Build of configuration Debug for project RTC_Demo_App ****
+
+Nothing to build for project RTC_Demo_App
+
+**** Build of configuration Debug for project RTC_Print_TimeInfo ****
+
+Nothing to build for project RTC_Print_TimeInfo
+
+**** Build of configuration Debug for project RTC_TS_Timer ****
+
+Nothing to build for project RTC_TS_Timer
+
+**** Build of configuration Debug for project Sleep-On-Exit_1 ****
+
+Nothing to build for project Sleep-On-Exit_1
+17:33:33 **** Clean-only build of configuration Debug for project TEST1 ****
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+**** Build of configuration Debug for project TEST1 ****
+
+Nothing to build for project TEST1
+17:33:33 **** Clean-only build of configuration Debug for project UART2_Example ****
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+**** Build of configuration Debug for project UART2_Example ****
+
+Nothing to build for project UART2_Example
+
+**** Build of configuration Debug for project UART2_Example_IT ****
+
+Nothing to build for project UART2_Example_IT
+
+**** Build of configuration Debug for project WFE_button ****
+
+Nothing to build for project WFE_button
+
+**** Build of configuration Debug for project WFI ****
+
+Nothing to build for project WFI
+17:33:33 **** Clean-only build of configuration Debug for project time_base_100ms ****
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+**** Build of configuration Debug for project time_base_100ms ****
+
+Nothing to build for project time_base_100ms
+
+**** Build of configuration Debug for project time_base_100ms_IT ****
+
+Nothing to build for project time_base_100ms_IT
+
+**** Build of configuration Debug for project time_base_10micro ****
+
+Nothing to build for project time_base_10micro
+
+**** Build of configuration Debug for project timer_IC_1 ****
+
+Nothing to build for project timer_IC_1
+
+**** Build of configuration Debug for project timer_OC_1 ****
+
+Nothing to build for project timer_OC_1
+
+**** Build of configuration Debug for project timer_OC_PWM_1 ****
+
+Nothing to build for project timer_OC_PWM_1
+
+**** Build of configuration Debug for project timer_PWM_LED ****
+
+Nothing to build for project timer_PWM_LED

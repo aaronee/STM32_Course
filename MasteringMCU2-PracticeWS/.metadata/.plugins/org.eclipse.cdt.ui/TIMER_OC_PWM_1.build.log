@@ -1,0 +1,11 @@
+12:17:13 **** Incremental Build of configuration Debug for project TIMER_OC_PWM_1 ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "TIMER_OC_PWM_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+  27192	    496	   1904	  29592	   7398	TIMER_OC_PWM_1.elf
+Finished building: TIMER_OC_PWM_1.siz
+ 
+
+12:17:13 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

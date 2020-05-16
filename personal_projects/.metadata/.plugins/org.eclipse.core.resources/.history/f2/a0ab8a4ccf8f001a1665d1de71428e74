@@ -1,0 +1,18 @@
+/*
+ * PMS5003_HAL_STM32.h
+ *
+ *  Created on: May 6, 2020
+ *      Author: khoahuynh
+ */
+
+#ifndef INC_PMS5003_HAL_STM32_H_
+#define INC_PMS5003_HAL_STM32_H_
+
+
+#include "main.h"
+
+typedef struct {
+
+}PMS_typedef;
+
+#endif /* INC_PMS5003_HAL_STM32_H_ */

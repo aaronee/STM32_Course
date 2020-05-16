@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="PreviewPatchPage">
+		<item key="expandPatchOptions" value="true"/>
+		<item key="generateRejects" value="false"/>
+	</section>
+	<section name="PatchWizard">
+		<item key="PatchWizardPage1.INPUT_METHOD" value="2"/>
+		<item key="PatchWizardPage1.PATCH_FILES" value="/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/Patch/FreeRTOSv10.3.1/FreeRTOSV10_Core.patch"/>
+		<item key="PatchWizardPage1.WORKSPACE_PATH" value=""/>
+		<item key="DIALOG_X_ORIGIN" value="418"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="689"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		<list key="PatchWizardPage1.PATCH_FILES">
+			<item value="/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/RTOS_workspace/FreeRTOS_helloworld_SYSVIEW/Third-Party/Segger/Patch/FreeRTOSv10.3.1/FreeRTOSV10_Core.patch"/>
+		</list>
+		<list key="PatchWizardPage1.PATCH_URLS">
+			<item value=""/>
+		</list>
+	</section>
+</section>

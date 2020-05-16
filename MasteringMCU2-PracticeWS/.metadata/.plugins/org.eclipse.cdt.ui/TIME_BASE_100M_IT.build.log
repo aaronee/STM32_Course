@@ -1,0 +1,11 @@
+13:50:53 **** Incremental Build of configuration Debug for project TIME_BASE_100M_IT ****
+make -j12 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "TIME_BASE_100M_IT.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7784	     32	   1776	   9592	   2578	TIME_BASE_100M_IT.elf
+Finished building: TIME_BASE_100M_IT.siz
+ 
+
+13:50:53 Build Finished. 0 errors, 0 warnings. (took 78ms)
+

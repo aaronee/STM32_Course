@@ -1,0 +1,11 @@
+12:39:26 **** Incremental Build of configuration Debug for project BkupSRAM_Standby ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "BkupSRAM_Standby.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16688	    136	   1840	  18664	   48e8	BkupSRAM_Standby.elf
+Finished building: BkupSRAM_Standby.siz
+ 
+
+12:39:26 Build Finished. 0 errors, 0 warnings. (took 172ms)
+

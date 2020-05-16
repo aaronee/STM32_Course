@@ -1,0 +1,68 @@
+/******************************************************************************************/
+/*                                Name: USART                                             */
+/*                                Author: Khoa Huynh                                      */
+/*                                Date: 30-July-2019                                      */
+/*                                Desciption:                                             */
+/*-Implement interrupt on STM32L4R5ZI board in LL CMSIS library                           */
+/*                                                                                        */
+/******************************************************************************************/
+/*--Header--------------------------------------------------------------------------------*/
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32l4r5xx.h"
+/*--Define--------------------------------------------------------------------------------*/
+/*--Global-Variable---------------------------------------------------------------------- */
+/*--Function Prototypes-------------------------------------------------------------------*/
+void initPort (void);
+void Blink(void);
+/*--Main----------------------------------------------------------------------------------*/
+int main()
+{
+	initPort();
+  while(1)
+  {
+
+  }
+} // EO Main
+
+/*--Function------------------------------------------------------------------------------*/
+/************************************************/
+/*             Name: initPort                   */
+/*-Initiating PC13 as input/interrupt           */
+/*-Initiating PB14 as LED red	                */
+/*                                              */
+/************************************************/
+void initPort(void)
+{
+/*config user button PC13 as interrupt input*/
+	RCC->AHB2ENR |= 0x04;// Enable GPIO port D
+	GPIOC->MODER &= ~(1<<26);
+	GPIOC->MODER &= ~(1<<27); // Enable PC13 as input - Button
+
+	EXTI->RTSR1 |= 0x1<<13; // Enable EXTI15-PD13 triggers in raising edge
+	EXTI->IMR1 |= 0x1<<13; // Un-mask EXTI15 to enable the interrupt in EXTI13 MUX
+	NVIC->ISER[1] |= 1<<8; //Enable EXTI15_10 - vector position 40 in NVIC
+
+	RCC->APB2ENR |= 0x01; //Enable SYSCFG register clock gate
+	SYSCFG->EXTICR[3] &= ~(0x0F<<4);
+	SYSCFG->EXTICR[3] |= 1<<5; // Select PC13 as interrupt trigger for EXTI13 line
+
+/*config PB14 as red LED3 */
+	RCC->AHB2ENR |= 1<<1; //Enable GPIO port B
+	GPIOB->MODER &= ~(1<<29);
+	GPIOB->MODER |= 1<<28; //Set PD14 as general output LED3
+
+}
+void Blink(void)
+{
+	GPIOB->ODR ^= 1<<14; // toggle pin PB14 - LED3
+	for(int i=0; i<10000; i++);
+}
+void EXTI15_10_IRQHandler (void)
+{
+	if (EXTI->PR1 & 1<<13) // check if the pending register is on
+		{
+			EXTI->PR1 = 1<<13; // clear the pending register by writing 1 to it
+		}
+	Blink();
+}
