@@ -1,4 +1,4 @@
-15:14:51 **** Incremental Build of configuration Debug for project UART_TX_SRAM_DMA ****
+21:17:29 **** Incremental Build of configuration Debug for project UART_TX_SRAM_DMA ****
 make -j11 all 
 Invoking: GNU ARM Cross Print Size
 arm-none-eabi-size --format=berkeley "UART_TX_SRAM_DMA.elf"
@@ -7,5 +7,5 @@ arm-none-eabi-size --format=berkeley "UART_TX_SRAM_DMA.elf"
 Finished building: UART_TX_SRAM_DMA.siz
  
 
-15:14:51 Build Finished. 0 errors, 0 warnings. (took 83ms)
+21:17:29 Build Finished. 0 errors, 0 warnings. (took 151ms)
 

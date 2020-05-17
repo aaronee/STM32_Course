@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="hDMA1_P2M_stream"/>
+		<item key="selection" value="EXTI"/>
 		<list key="findhistory">
+			<item value="exti"/>
+			<item value="hDMA1_P2M_stream"/>
 			<item value="hDMA1_M2M_stream"/>
 			<item value="DMA"/>
 			<item value="LPUART1_IRQHandler"/>
@@ -17,6 +19,7 @@
 			<item value="LPUART1"/>
 		</list>
 		<list key="replacehistory">
+			<item value="hDMA1_M2P_stream"/>
 			<item value="hDMA1_P2M_stream"/>
 		</list>
 	</section>
