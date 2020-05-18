@@ -17,7 +17,7 @@
 #include <stdio.h>
 
 #define OFFSET 0x800
-#define DATALOC (uint8_t *)SRAM1_BASE + OFFSET
+#define DATALOC (uint8_t *)SRAM2_BASE + OFFSET
 
 void SystemClockConfig(uint8_t clock_freq);
 void Error_Handler(void);
@@ -28,7 +28,7 @@ void my_DMA_callback_func(DMA_HandleTypeDef *hdma);
 UART_HandleTypeDef hlpuart1 = {0};
 DMA_HandleTypeDef hDMA1_P2M_stream = {0};
 uint8_t LED_data[2] = {0x00,0xff};
-uint8_t Buffer[10];
+
 int main(void)
 {
 	HAL_Init(); // init HAL
@@ -37,7 +37,7 @@ int main(void)
 	UART_Init();
 	DMA_Init();
 
-	HAL_UART_Receive_DMA(&hlpuart1,Buffer,10);
+	HAL_UART_Receive_DMA(&hlpuart1,DATALOC,10);
 
 	while(1)
 	{
@@ -247,6 +247,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
   if(huart->Instance == LPUART1)
   {
-	  HAL_UART_Transmit(&hlpuart1,Buffer,strlen((char*)Buffer),HAL_MAX_DELAY);
+	  HAL_UART_Transmit(&hlpuart1,DATALOC,strlen((char*)DATALOC),HAL_MAX_DELAY);
   }
 }

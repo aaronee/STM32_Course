@@ -12,21 +12,31 @@
 #include <string.h>
 #include <stdio.h>
 
+#define OFFSET 0x800
+#define DATALOCAD (SRAM1_BASE + OFFSET)
+#define DATALOC (uint8_t *)(SRAM1_BASE + OFFSET)
+
 void Error_Handler(void);
 void GPIO_Init(void);
 void DMA_Init(void);
 void UART_Init(void);
 
-void send_data(void);
+void send_data(uint8_t *buffdata);
+uint8_t data[]="helloworld";
 
 int main(void)
 {
 	GPIO_Init();
 	UART_Init();
-	send_data();
-	while(1)
-	{
-	}
+	DMA_Init();
+	memcpy(DATALOC,data,10);
+
+	while(!((1UL<<7UL) & (LPUART1->ISR)));
+	LPUART1->ICR |= (1UL<<6UL); //clear TC flag
+	DMA1_Channel1->CCR |= (1UL<<0UL);	// DMA1 channel 1 enable
+	while((LPUART1->ISR>>6UL) & 1);
+
+	while(1);
 	return 0;
 }
 
@@ -78,6 +88,25 @@ void DMA_Init(void)
 //	{
 //		Error_Handler();
 //	}
+	RCC->AHB1ENR |= RCC_AHB1ENR_DMAMUX1EN;
+	RCC->AHB1ENR |= RCC_AHB1ENR_DMA1EN;
+
+	DMAMUX1_Channel0->CCR |= 35; // config dmamux1 channel 0 ( DMA1_channel1 ) to lpuart1_tx request
+
+	DMA1_Channel1->CCR &= ~(1UL<<14UL); // mem2mem disable
+	DMA1_Channel1->CCR &= ~(0x3<<10UL); // 8bit memory size
+	DMA1_Channel1->CCR &= ~(0x3<<8UL);	// 8bit peripheral size
+	DMA1_Channel1->CCR 		|= (1UL<<7UL);	// mem increase
+	DMA1_Channel1->CCR 		|= (1UL<<4UL);	// read from mem to peri
+	DMA1_Channel1->CCR 		|= (1UL<<1UL);	// transfercomplete interrupt enable
+	DMA1_Channel1->CPAR		|= 0x40008028;	// address of LPUART1 Tx
+	DMA1_Channel1->CNDTR	|= 10;
+	DMA1_Channel1->CMAR		|= SRAM1_BASE + OFFSET;
+
+
+	//enable NVIC
+	__NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+
 
 }
 void UART_Init(void)
@@ -102,25 +131,27 @@ void UART_Init(void)
 
 	/*!<config lpuart1 characteristic>*/
 	LPUART1->BRR |= 0x1A0AA; // 9600baud with 16bit oversampling + 4Mhz uart clk
+	LPUART1->CR3 |= (1UL<<7UL); // enable DMA transmition
+
 	//keep the rest default
 
 	/*!<enable tx engine & enable uart>*/
 	LPUART1->CR1 |= (1UL<<3UL); // transmit enable
 	LPUART1->CR1 |= (1UL<<0UL); // Uart enable
 }
-void send_data(void)
+void send_data(uint8_t *buffdata)
 {
-	char data[20]="hello world!\r\n";
 	// check if transmit data status register is empty; TXE is 1
 	// put a byte to DR if ok
 	while(!((1UL<<7UL) & (LPUART1->ISR)));
 
-	for(uint8_t i=0; i< strlen(data);i++)
+	for(uint8_t i=0; i< strlen((char*)buffdata);i++)
 	{
 		LPUART1->TDR = data[i];
 		while(!((1UL<<7UL) & (LPUART1->ISR)));
 	}
 }
+
 void Error_Handler(void)
 {
 	while(1);

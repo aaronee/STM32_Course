@@ -6,12 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="EXTI"/>
+		<item key="selection" value="DMA1"/>
 		<list key="findhistory">
+			<item value="DMA1"/>
+			<item value="DMA"/>
 			<item value="exti"/>
 			<item value="hDMA1_P2M_stream"/>
 			<item value="hDMA1_M2M_stream"/>
-			<item value="DMA"/>
 			<item value="LPUART1_IRQHandler"/>
 			<item value="lpuart"/>
 			<item value="lpuar"/>
