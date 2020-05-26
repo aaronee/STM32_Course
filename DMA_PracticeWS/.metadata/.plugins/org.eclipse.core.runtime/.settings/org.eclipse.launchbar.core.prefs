@@ -1,13 +1,15 @@
 LaunchTargetManager/configs/1_LED_Toggle\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/1_LED_Toggle_DMA_IT\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/LPC1768\ Default=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/M2P_UART_TX_DMA_SCRATCH\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Nucleo_blink_led\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/UART_SRAM_DMA\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/UART_TX_SRAM_DMA\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle Debug,org.eclipse.launchbar.core.descriptorType.default\:UART_SRAM_DMA Debug,org.eclipse.launchbar.core.descriptorType.default\:UART_TX_SRAM_DMA Debug,org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle_DMA_IT Debug,org.eclipse.launchbar.core.descriptorType.default\:M2P_UART_TX_DMA_SCRATCH Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle Debug,org.eclipse.launchbar.core.descriptorType.default\:UART_SRAM_DMA Debug,org.eclipse.launchbar.core.descriptorType.default\:UART_TX_SRAM_DMA Debug,org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle_DMA_IT Debug,org.eclipse.launchbar.core.descriptorType.default\:M2P_UART_TX_DMA_SCRATCH Debug,org.eclipse.launchbar.core.descriptorType.default\:LPC1768 Default,org.eclipse.launchbar.core.descriptorType.default\:Nucleo_blink_led Debug
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:1_LED_Toggle\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

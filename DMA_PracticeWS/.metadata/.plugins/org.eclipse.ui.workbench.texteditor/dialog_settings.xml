@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="DMA1"/>
+		<item key="selection" value="all"/>
 		<list key="findhistory">
+			<item value="all"/>
 			<item value="DMA1"/>
 			<item value="DMA"/>
 			<item value="exti"/>

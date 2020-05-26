@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/khoahuynh/Downloads/Nucleo_blink_led-4"/>
+			<item value="/Users/khoahuynh/Downloads/Nucleo_blink_led-3"/>
+			<item value="/Users/khoahuynh/Downloads/Nucleo_blink_led-2"/>
+			<item value="/Users/khoahuynh/Downloads/Nucleo_blink_led"/>
 			<item value="/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/DMA_PracticeWS/WFE_Button"/>
 			<item value="/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/MasteringMCU2-PracticeWS/WFE_Button"/>
 			<item value="/Users/khoahuynh/Documents/Document/STM32L4R5ZIT6_NucleoL4R5ZI/Eclipse/DMA_PracticeWS"/>
