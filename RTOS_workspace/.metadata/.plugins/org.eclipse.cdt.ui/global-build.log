@@ -966,3 +966,11 @@ Finished building: FreeRTOS_Mutex_using_Bin_Sema.siz
  
 Finished building: FreeRTOS_Mutex_using_Bin_Sema.hex
  
+23:48:58 **** Build of configuration Debug for project FreeRTOS_MutexAPI ****
+make -j11 all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "FreeRTOS_MutexAPI.elf"
+   text	   data	    bss	    dec	    hex	filename
+  33400	    136	  36968	  70504	  11368	FreeRTOS_MutexAPI.elf
+Finished building: FreeRTOS_MutexAPI.siz
+ 

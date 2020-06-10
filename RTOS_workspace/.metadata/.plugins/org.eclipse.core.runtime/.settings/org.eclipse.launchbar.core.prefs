@@ -16,7 +16,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_LED_and_Button_IT Debug,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Tasks_Notify Debug,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_helloworld Debug OpenOCD,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_MutexAPI Debug,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Mutex_using_Bin_Sema Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_LED_and_Button_IT Debug,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Tasks_Notify Debug,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_helloworld Debug OpenOCD,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_MutexAPI Debug
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_LED_and_Button\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_LED_and_Button_IT\ Debug/activeLaunchMode=debug
